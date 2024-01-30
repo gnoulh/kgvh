@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <title>Không gian văn hóa Hồ Chí Minh</title>
+  </head>
+  <body>
+    <!-- Brand -->
+    <a href="#" class="brand">
+      <img class="brand-img" src="./assets/img/logo.svg" alt="Logo" />
+      <p class="brand-title">Không gian văn hóa Hồ Chí Minh</p>
+    </a>
+    <p class="school-title">Đại học Khoa học Tự nhiên, ĐHQG-HCM</p>
+    <!-- Action Buttons -->
+    <div class="navbar-action" data-aos="fade-left">
+      <a href="dangnhap.html" class="dangnhap">Đăng nhập</a>
+      <a href="dangky.html" class="dangky">Đăng ký</a>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-container">
+
+          <!-- Nav Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <center>
+              <a href="index.html" class="nav-link">TRANG CHỦ</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="cuocdoisunghiep.html" class="nav-link" onclick="go(this)">CUỘC ĐỜI, SỰ NGHIỆP</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="tutuongdaoducphongcach.html" class="nav-link">TƯ TƯỞNG, ĐẠO ĐỨC, PHONG CÁCH</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="tacpham.html" class="nav-link">TÁC PHẨM</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="bachovoithanhnien.html" class="nav-link">BÁC HỒ VỚI THANH NIÊN</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="thanhnientientien.html" class="nav-link">THANH NIÊN TIÊN TIẾN LÀM THEO LỜI BÁC</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="chuyentotviecdep.html" class="nav-link">CHUYỆN TỐT VIỆC ĐẸP TỰ NHIÊN</a>
+              </center>
+            </li>
+          </ul>
+
+          <div class="navbar-right">
+            <!-- Menu button -->
+            <div class="navbar-menu">
+              <button class="btn" id="navbar-menu-offcanvas-open-btn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <!-- Menu Offcanvas -->
+              <div class="navbar-menu-offcanvas" id="navbar-menu-offcanvas">
+                <div class="navbar-menu-offcanvas-header">
+                  <div class="brand">
+                    <img
+                      class="brand-img"
+                      src="./assets/img/logo.svg"
+                      alt="Logo"
+                    />
+                    <p class="brand-title">
+                      Không gian văn hóa Hồ Chí Minh<span class="font-bold">HCMUS</span>
+                    </p>
+                  </div>
+                  <div>
+                    <button class="btn" id="navbar-menu-offcanvas-close-btn">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="navbar-menu-offcanvas-body">
+                  <ul class="navbar-nav-mb">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="cuocdoisunghiep.html" class="nav-link">Cuộc đời, sự nghiệp</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="tutuongdaoducphongcach.html" class="nav-link">Tư tưởng, đạo đức, phong cách</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="tacpham.html" class="nav-link">Tác phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="bachovoithanhnien.html" class="nav-link">Bác Hồ với thanh niên</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navbar-menu-offcanvas-footer">
+                  <div class="navbar-action">
+                    <a href="dangnhap.html" class="btn">Đăng nhập</a>
+                    <a href="dangky.html" class="btn btn-outline">Đăng ký</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <!-- Text -->
+          <div data-aos="fade-right">
+            <div>
+              <div class="header-text">
+                <h1>
+                  Chào mừng đến với
+                  <span class="font-bold">Không gian văn hóa Hồ Chí Minh.</span>
+                </h1>
+                <p class="text-md">
+                  Đại học Khoa học Tự nhiên, ĐHQG-HCM.
+                </p>
+              </div>
+              <button class="btn btn-solid shadow shadow-btn">
+                Get Started
+              </button>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div data-aos="fade-left">
+            <img
+              src="./assets/img/logo.svg"
+              alt="Header Illustration"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- About -->
+      <!-- <section class="about" id="about">
+        <div class="container">
+          <div class="about-container shadow" data-aos="fade-up">
+            <div class="about-item">
+              <div class="about-box">
+                <div class="about-content">
+                  <div class="about-icon">
+                    <div class="icon-wrapper">
+                      <i class="icon fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                  <div class="about-text">
+                    <h4>90+</h4>
+                    <p class="text-xl">Users</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-box">
+                <div class="about-content">
+                  <div class="about-icon">
+                    <div class="icon-wrapper">
+                      <i class="icon fa-solid fa-location-dot"></i>
+                    </div>
+                  </div>
+                  <div class="about-text">
+                    <h4>30+</h4>
+                    <p class="text-xl">Locations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-box">
+                <div class="about-content">
+                  <div class="about-icon">
+                    <div class="icon-wrapper">
+                      <i class="icon fa-solid fa-server"></i>
+                    </div>
+                  </div>
+                  <div class="about-text">
+                    <h4>50+</h4>
+                    <p class="text-xl">Servers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Features -->
+      <section class="features" id="features">
+        <div class="container">
+          <div class="features-container">
+            <!-- <div data-aos="flip-left">
+              <img
+                src="./assets/img/illustrations/features.svg"
+                alt="Features Illustration"
+              />
+            </div> -->
+            <div data-aos="zoom-in">
+              <div class="content">
+                  <h3>Hoạt động mới</h3>
+                  <div class="news">
+                    <div class="news-box">
+                      <div class="thumbnail">
+                        <img src="upload\2024\01\20\images.jfif" alt="article">
+                      </div>
+                      <div class="news-text">
+                        <span>20/01/2024</span>
+                        <a href="upload/first.html" class="atitle">Tuyên ngôn độc lập</a>
+                      </div>
+                    </div>
+
+                    <div class="news-box">
+                      <div class="thumbnail">
+                        <img src="upload\2024\01\20\images.jfif" alt="article">
+                      </div>
+                      <div class="news-text">
+                        <span>20/01/2024</span>
+                        <a href="upload/first.html" class="atitle">Tuyên ngôn độc lập</a>
+                      </div>
+                    </div>
+
+                    <div class="news-box">
+                      <div class="thumbnail">
+                        <img src="upload\2024\01\20\images.jfif" alt="article">
+                      </div>
+                      <div class="news-text">
+                        <span>20/01/2024</span>
+                        <a href="upload/first.html" class="atitle">Tuyên ngôn độc lập</a>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- <ul class="feature-list">
+                  <li class="feature">
+                    <p class="text-sm">b.</p>
+                  </li>
+                  <li class="feature">
+                    <p class="text-sm">c.</p>
+                  </li>
+                  <li class="feature">
+                    <p class="text-sm">d</p>
+                  </li>
+                  <li class="feature">
+                    <p class="text-sm">e.</p>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <div class="pricing-container">
+            <div class="section-heading" data-aos="zoom-in-right">
+              <h2>Tấm gương tiêu biểu</h2>
+              <p class="text-md">
+                abcdef.
+              </p>
+            </div>
+
+            <div class="pricing-grid">
+              <div class="pricing-item" data-aos="fade-right">
+                <div class="pricing-content">
+                  <div class="pricing-header">
+                    <!-- <img
+                      class="pricing-img"
+                      src="./assets/img/illustrations/pricing.svg"
+                      alt="Pricing Illustration"
+                    /> -->
+                    <h5>A</h5>
+                  </div>
+                  <ul class="pricing-body">
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">B</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">C</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">D</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">E</p>
+                    </li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <button class="btn btn-outline btn-full">Tìm hiểu thêm</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-item" data-aos="fade-up">
+                <div class="pricing-content">
+                  <div class="pricing-header">
+                    <img
+                      class="pricing-img"
+                      src="./assets/img/testimonials/customer-2.png"
+                      alt="Pricing Illustration"
+                    />
+                    <h5>B</h5>
+                  </div>
+                  <ul class="pricing-body">
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">C</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">D</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">E</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">F</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">G</p>
+                    </li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <button class="btn btn-outline btn-full">Tìm hiểu thêm</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-item" data-aos="fade-left">
+                <div class="pricing-content">
+                  <div class="pricing-header">
+                    <img
+                      class="pricing-img"
+                      src="./assets/img/testimonials/customer-1.png"
+                      alt="Pricing Illustration"
+                    />
+                    <h5>C</h5>
+                  </div>
+                  <ul class="pricing-body">
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">D</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">Đ</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">E</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">Ê</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">F</p>
+                    </li>
+                    <li class="pricing-feature">
+                      <!-- <i class="icon icon-check fa-solid fa-check"></i> -->
+                      <p class="text-sm">G</p>
+                    </li>
+                  </ul>
+                  <div class="pricing-footer">
+                    <button class="btn btn-outline btn-full">Tìm hiểu thêm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Network -->
+      <!-- <section class="network" id="network">
+        <div class="container">
+          <div class="network-container">
+            <div class="section-heading" data-aos="zoom-in-left">
+              <h2>Huge Global Network of Fast VPN</h2>
+              <p class="text-md">
+                See LaslesVPN everywhere to make it easier for you when you move
+                locations.
+              </p>
+            </div>
+            <div class="network-img" data-aos="zoom-in-up">
+              <img
+                src="./assets/img/illustrations/network.svg"
+                alt="Network Illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Testimonials -->
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="testimonials-container">
+            <div class="section-heading" data-aos="zoom-in-right">
+              <h2>Cảm nhận của sinh viên</h2>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-right">
+              <div class="testimonials-row">
+                <div class="testimonial">
+                  <div class="testimonial-header">
+                    <div class="testimonial-customer">
+                      <div class="customer-avatar">
+                        <img
+                          src="./assets/img/testimonials/customer-1.png"
+                          alt="sv1"
+                        />
+                      </div>
+
+                      <div class="customer-info">
+                        <h5>Nguyễn Văn A</h5>
+                        <p class="text-sm">Khoa Công nghệ thông tin, khóa 22</p>
+                      </div>
+                    </div>
+                    <!-- <div class="rating">
+                      <span>4.5</span>
+                      <i class="icon icon-star icon-sm fa-solid fa-star"></i>
+                    </div> -->
+                  </div>
+                  <div class="testimonial-body">
+                    <p class="text-md">
+                      "abcdef".
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial-header">
+                    <div class="testimonial-customer">
+                      <div class="customer-avatar">
+                        <img
+                          src="./assets/img/testimonials/customer-1.png"
+                          alt="sv1"
+                        />
+                      </div>
+
+                      <div class="customer-info">
+                        <h5>Trương Nguyễn Hiền Lương</h5>
+                        <p class="text-sm">Khoa Công nghệ thông tin, 22CLC02</p>
+                      </div>
+                    </div>
+                    <!-- <div class="rating">
+                      <span>4.5</span>
+                      <i class="icon icon-star icon-sm fa-solid fa-star"></i>
+                    </div> -->
+                  </div>
+                  <div class="testimonial-body">
+                    <p class="text-md">
+                      "Haizz"
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial-header">
+                    <div class="testimonial-customer">
+                      <div class="customer-avatar">
+                        <img
+                          src="./assets/img/testimonials/customer-1.png"
+                          alt="sv1"
+                        />
+                      </div>
+
+                      <div class="customer-info">
+                        <h5>Nguyễn Thị C</h5>
+                        <p class="text-sm">Khoa Toán-Tin</p>
+                      </div>
+                    </div>
+                    <!-- <div class="rating">
+                      <span>4.5</span>
+                      <i class="icon icon-star icon-sm fa-solid fa-star"></i>
+                    </div> -->
+                  </div>
+                  <div class="testimonial-body">
+                    <p class="text-md">
+                      "123"
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial-header">
+                    <div class="testimonial-customer">
+                      <div class="customer-avatar">
+                        <img
+                          src="./assets/img/testimonials/customer-1.png"
+                          alt="sv1"
+                        />
+                      </div>
+
+                      <div class="customer-info">
+                        <h5>a</h5>
+                        <p class="text-sm">Khoa B</p>
+                      </div>
+                    </div>
+                    <!-- <div class="rating">
+                      <span>4.5</span>
+                      <i class="icon icon-star icon-sm fa-solid fa-star"></i>
+                    </div> -->
+                  </div>
+                  <div class="testimonial-body">
+                    <p class="text-md">
+                      c
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <div class="testimonial-header">
+                    <div class="testimonial-customer">
+                      <div class="customer-avatar">
+                        <img
+                          src="./assets/img/testimonials/customer-1.png"
+                          alt="sv1"
+                        />
+                      </div>
+
+                      <div class="customer-info">
+                        <h5>...</h5>
+                        <p class="text-sm">Khoa C</p>
+                      </div>
+                    </div>
+                    <!-- <div class="rating">
+                      <span>4.5</span>
+                      <i class="icon icon-star icon-sm fa-solid fa-star"></i> -->
+                    </div>
+                  </div>
+                  <div class="testimonial-body">
+                    <p class="text-md">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Help -->
+      <section class="help" data-aos="zoom-in" id="help">
+        <!-- <div class="container">
+          <div class="help-container shadow">
+            <div class="help-heading">
+              <h3>Subscribe Now for Get Special Features!</h3>
+              <p class="text-md">Let's subscribe with us and find the fun.</p>
+            </div>
+            <button class="btn btn-solid shadow shadow-btn">
+              Subscribe Now
+            </button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-content" data-aos="fade-right">
+            <div class="brand">
+              <img class="brand-img" src="./assets/img/logo.svg" alt="Logo" />
+              <p class="brand-title">
+                Không gian văn hóa Hồ Chí Minh HCMUS
+              </p>
+            </div>
+            <p class="text-md">
+              <span class="font-medium">Không gian văn hóa Hồ Chí Minh</span>
+              là ...
+            </p>
+            <div class="media-icons media-icons-sm">
+              <div class="icon-wrapper">
+                <img class="brand-img" src="./assets/img/logo.svg" alt="Logo" />
+              </div>
+              <div class="icon-wrapper">
+                <i class="icon fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="icon fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <p class="text-md copyright">©2024HCMUS</p>
+          </div>
+          <div class="footer-links" data-aos="fade-left">
+            <div>
+              <h5>Về Bác</h5>
+              <ul class="text-md">
+                <li>
+                  <a href="cuocdoisunghiep.html">Cuộc đời, sự nghiệp</a>
+                </li>
+                <li>
+                  <a href="tutuongdaoducphongcach.html">Tư tưởng, đạo đức, phong cách</a>
+                </li>
+                <li>
+                  <a href="tacpham.html">Tác phẩm</a>
+                </li>
+                <li>
+                  <a href="bachovoithanhnien.html">Bác Hồ với thanh niên</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>a</h5>
+              <ul class="text-md">
+                <li>
+                  <a href="thanhnientientien.html">Thanh niên tiên tiến làm theo lời Bác</a>
+                </li>
+                <li>
+                  <a href="chuyentotviecdep.html">Chuyện tốt việc đẹp Tự nhiên</a>
+                </li>
+                <li>
+                  <a href="hoidap.html">Hỏi đáp</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+      AOS.init({ duration: 750 });
+    </script>
+  </body>
+</html>

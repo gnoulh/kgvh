@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <title>Cuộc đời sự nghiệp</title>
+  </head>
+  <body>
+    <!-- Brand -->
+    <a href="#" class="brand">
+      <img class="brand-img" src="assets/img/logo.svg" alt="Logo" />
+      <p class="brand-title">Không gian văn hóa Hồ Chí Minh</p>
+    </a>
+    <p class="school-title">Đại học Khoa học Tự nhiên, ĐHQG-HCM</p>
+    <!-- Action Buttons -->
+    <div class="navbar-action" data-aos="fade-left">
+      <a href="dangnhap.html" class="dangnhap">Đăng nhập</a>
+      <a href="dangky.html" class="dangky">Đăng ký</a>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-container">
+
+          <!-- Nav Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <center>
+              <a href="index.html" class="nav-link">TRANG CHỦ</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="cuocdoisunghiep.html" class="nav-link" onclick="go(this)">CUỘC ĐỜI, SỰ NGHIỆP</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="tutuongdaoducphongcach.html" class="nav-link">TƯ TƯỞNG, ĐẠO ĐỨC, PHONG CÁCH</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="tacpham.html" class="nav-link">TÁC PHẨM</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="bachovoithanhnien.html" class="nav-link">BÁC HỒ VỚI THANH NIÊN</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="thanhnientientien.html" class="nav-link">THANH NIÊN TIÊN TIẾN LÀM THEO LỜI BÁC</a>
+              </center>
+            </li>
+            <li class="nav-item">
+              <center>
+              <a href="chuyentotviecdep.html" class="nav-link">CHUYỆN TỐT VIỆC ĐẸP TỰ NHIÊN</a>
+              </center>
+            </li>
+          </ul>
+
+          <div class="navbar-right">
+            <!-- Menu button -->
+            <div class="navbar-menu">
+              <button class="btn" id="navbar-menu-offcanvas-open-btn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <!-- Menu Offcanvas -->
+              <div class="navbar-menu-offcanvas" id="navbar-menu-offcanvas">
+                <div class="navbar-menu-offcanvas-header">
+                  <div class="brand">
+                    <img
+                      class="brand-img"
+                      src="assets/img/logo.svg"
+                      alt="Logo"
+                    />
+                    <p class="brand-title">
+                      Không gian văn hóa Hồ Chí Minh<span class="font-bold">HCMUS</span>
+                    </p>
+                  </div>
+                  <div>
+                    <button class="btn" id="navbar-menu-offcanvas-close-btn">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="navbar-menu-offcanvas-body">
+                  <ul class="navbar-nav-mb">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="cuocdoisunghiep.html" class="nav-link">Cuộc đời, sự nghiệp</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="tutuongdaoducphongcach.html" class="nav-link">Tư tưởng, đạo đức, phong cách</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="tacpham.html" class="nav-link">Tác phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="bachovoithanhnien.html" class="nav-link">Bác Hồ với thanh niên</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navbar-menu-offcanvas-footer">
+                  <div class="navbar-action">
+                    <a href="dangnhap.html" class="btn">Đăng nhập</a>
+                    <a href="dangky.html" class="btn btn-outline">Đăng ký</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+
+    <header>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+            }
+    
+            header {
+                text-align: center;
+                padding: 20px 0;
+                background-color: #f2f2f2;
+            }
+    
+            article {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+    
+            h1 {
+                color: #333;
+            }
+    
+            p {
+                margin-bottom: 20px;
+            }
+    
+            img {
+                max-width: 30%;
+                float: left;
+                height: 50%;
+                margin-bottom: 20px;
+                margin-right: 20px;
+            }
+    
+            /* Add more styles as needed */
+        </style>
+        <h1>Tiểu sử Chủ tịch Hồ Chí Minh</h1>
+        <p><time datetime="2024-01-23">23/01/2024</time></p>
+    </header>
+
+    <article>
+        <p>Hồ Chí Minh (chữ Nho: 胡志明; 19 tháng 5 năm 1890 - 2 tháng 9 năm 1969), tên khai sinh là Nguyễn Sinh Cung (chữ Nho: 阮生恭), còn được biết với tên gọi Bác Hồ, là một nhà cách mạng và chính khách người Việt Nam. Ông là người sáng lập Đảng Cộng sản Việt Nam, từng là Chủ tịch nước Việt Nam Dân chủ Cộng hoà từ 1945-1969, Thủ tướng Việt Nam Dân chủ Cộng hòa trong những năm 1945-1955, Tổng Bí thư Ban Chấp hành Trung ương Đảng Lao động Việt Nam từ 1956-1960, Chủ tịch Ban Chấp hành Trung ương Đảng Lao động Việt Nam từ năm 1951 cho đến khi qua đời.</p>
+
+        <img src="./assets/img/bac.jfif" alt="Image Description">
+
+        <p>Cha của Nguyễn Sinh Cung là một nhà Nho tên là Nguyễn Sinh Sắc (1862-1929), từng đỗ Phó bảng. Mẹ ông là bà Hoàng Thị Loan (1868-1901). Nguyễn Sinh Cung có một người chị là Nguyễn Thị Thanh (sinh năm 1884), một người anh là Nguyễn Sinh Khiêm (sinh năm 1888, tự Tất Đạt, còn gọi là Cả Khiêm) và một người em trai mất sớm là Nguyễn Sinh Nhuận (1900-1901, tên khi mới lọt lòng là Xin).</p>
+
+        <p>Donec eget ligula vitae eros sagittis vestibulum. Suspendisse cursus venenatis justo, ut vestibulum metus iaculis ac...</p>
+
+        <!-- Add more content as needed -->
+
+    </article>
+
+    <!-- Add a comment section, related articles, or other sections if necessary -->
+    </main>
+
+<!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-content" data-aos="fade-right">
+            <div class="brand">
+              <img class="brand-img" src="assets/img/logo.svg" alt="Logo" />
+              <p class="brand-title">
+                Không gian văn hóa Hồ Chí Minh HCMUS
+              </p>
+            </div>
+            <p class="text-md">
+              <span class="font-medium">Không gian văn hóa Hồ Chí Minh</span>
+              là ...
+            </p>
+            <div class="media-icons media-icons-sm">
+              <div class="icon-wrapper">
+                <img class="brand-img" src="assets/img/logo.svg" alt="Logo" />
+              </div>
+              <div class="icon-wrapper">
+                <i class="icon fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="icon fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <p class="text-md copyright">©2024HCMUS</p>
+          </div>
+          <div class="footer-links" data-aos="fade-left">
+            <div>
+              <h5>Về Bác</h5>
+              <ul class="text-md">
+                <li>
+                  <a href="cuocdoisunghiep.html">Cuộc đời, sự nghiệp</a>
+                </li>
+                <li>
+                  <a href="tutuongdaoducphongcach.html">Tư tưởng, đạo đức, phong cách</a>
+                </li>
+                <li>
+                  <a href="tacpham.html">Tác phẩm</a>
+                </li>
+                <li>
+                  <a href="bachovoithanhnien.html">Bác Hồ với thanh niên</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>a</h5>
+              <ul class="text-md">
+                <li>
+                  <a href="thanhnientientien.html">Thanh niên tiên tiến làm theo lời Bác</a>
+                </li>
+                <li>
+                  <a href="chuyentotviecdep.html">Chuyện tốt việc đẹp Tự nhiên</a>
+                </li>
+                <li>
+                  <a href="hoidap.html">Hỏi đáp</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+      AOS.init({ duration: 750 });
+    </script>
+  </body>
+</html>
